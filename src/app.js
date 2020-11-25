@@ -71,10 +71,6 @@ app.get('/help',(req,res) => {
     })
 })
 
-app.get('/help/*',(req, res) =>{
-    res.send('help content not found')
-})
-
 console.log(publicdirectorypath)
 app.use(express.static(publicdirectorypath))
 
